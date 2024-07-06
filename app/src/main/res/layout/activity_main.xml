@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/textViewTurn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/alata"
+        android:text="INICIO DEL JUEGO"
+        android:textAlignment="center"
+        android:textSize="20dp" />
+
+    <ImageView
+        android:id="@+id/winnerImage"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        />
+
+    <GridLayout
+        android:id="@+id/gridLayoutBoard"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:columnCount="3"
+        android:rowCount="3"
+        android:padding="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp">
+
+
+        <ImageButton
+            android:id="@+id/button00"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="4dp"
+            android:backgroundTint="#C0C3D1"
+            android:onClick="ClickCelda"
+            android:text="24sp"
+            android:scaleType="centerInside"
+            />
+
+        <ImageButton
+            android:id="@+id/button01"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="4dp"
+            android:backgroundTint="#AFBFBD"
+            android:onClick="ClickCelda"
+            android:scaleType="centerInside"
+            android:text=""
+            />
+
+        <ImageButton
+            android:id="@+id/button02"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="4dp"
+            android:backgroundTint="#C0C3D1"
+            android:onClick="ClickCelda"
+            android:scaleType="centerInside"
+            android:text=""
+            />
+
+        <ImageButton
+            android:id="@+id/button10"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="4dp"
+            android:backgroundTint="#AFBFBD"
+            android:onClick="ClickCelda"
+            android:scaleType="centerInside"
+            android:text=""
+            />
+
+        <ImageButton
+            android:id="@+id/button11"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="4dp"
+            android:backgroundTint="#C0C3D1"
+            android:onClick="ClickCelda"
+            android:scaleType="centerInside"
+            android:text=""
+            />
+
+        <ImageButton
+            android:id="@+id/button12"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="4dp"
+            android:backgroundTint="#AFBFBD"
+            android:onClick="ClickCelda"
+            android:scaleType="centerInside"
+            android:text=""
+            />
+
+        <ImageButton
+            android:id="@+id/button20"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="4dp"
+            android:backgroundTint="#C0C3D1"
+            android:onClick="ClickCelda"
+            android:scaleType="centerInside"
+            android:text=""
+            />
+
+        <ImageButton
+            android:id="@+id/button21"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="4dp"
+            android:backgroundTint="#AFBFBD"
+            android:onClick="ClickCelda"
+            android:scaleType="centerInside"
+            android:text=""
+            />
+
+        <ImageButton
+            android:id="@+id/button22"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="4dp"
+            android:backgroundTint="#C0C3D1"
+            android:onClick="ClickCelda"
+            android:scaleType="centerInside"
+            android:text=""
+            />
+
+    </GridLayout>
+
+    <Button
+        android:id="@+id/buttonReset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="15dp"
+        android:backgroundTint="#4B6361"
+        android:fontFamily="@font/alata"
+        android:onClick="resetGame"
+        android:text="@string/reiniciar_el_juego"
+        android:textColor="#202229"
+        android:textColorLink="#5C3333"
+        app:rippleColor="#805858" />
+
+
+</LinearLayout>
